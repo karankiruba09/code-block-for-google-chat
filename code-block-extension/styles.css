@@ -1,0 +1,78 @@
+.code-block-button:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.code-modal {
+  position: fixed;
+  bottom: 100px; /* Position above the chat bar */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.code-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%;
+  max-width: 500px;
+  padding-bottom: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.code-modal-content textarea {
+  width: calc(100% - 16px);
+  height: 150px;
+  margin-bottom: 10px; /* Reduced space below the textarea */
+  padding: 8px;
+  font-family: monospace;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  
+   /* Remove any margin to ensure no extra space below */
+   margin-top: -5px; 
+}
+
+.button-group button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.insert-button {
+   background-color: #1a73e8; 
+   color: white; 
+   border: none; 
+}
+
+.insert-button:hover {
+   background-color: #1557b0; 
+}
+
+.cancel-button {
+   background-color: #ff4d4d; 
+   border: none; 
+   color: white; 
+}
+
+.cancel-button:hover {
+   background-color: #e60000; 
+}
+
+/* Media query for responsiveness on smaller screens */
+@media (max-width:900px) { 
+ .code-modal-content { 
+     width:95%; 
+     max-width:none; 
+     margin-left:auto; 
+     margin-right:auto; 
+ } 
+}

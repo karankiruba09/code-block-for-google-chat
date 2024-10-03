@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Code Block for Google Chat",
+    "version": "1.0",
+    "description": "Add code blocks to Google Chat messages",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*", "https://chat.google.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"],
+        "all_frames": true
+      }
+    ],
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
